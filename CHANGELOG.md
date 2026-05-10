@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.1.0] - 2026-05-10
+
 ### Added
 
 - [#106](https://github.com/green-code-initiative/creedengo-javascript/pull/106) Add ESLint v10 compatibility
@@ -139,7 +141,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup basic coding style tools
 - Write complete contributing guide
 
-[unreleased]: https://github.com/green-code-initiative/creedengo-javascript/compare/3.0.0...HEAD
+[unreleased]: https://github.com/green-code-initiative/creedengo-javascript/compare/3.1.0...HEAD
+[3.1.0]: https://github.com/green-code-initiative/creedengo-javascript/compare/3.0.0...3.1.0
 [3.0.0]: https://github.com/green-code-initiative/creedengo-javascript/compare/2.2.0...3.0.0
 [2.2.0]: https://github.com/green-code-initiative/creedengo-javascript/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/green-code-initiative/creedengo-javascript/compare/2.0.0...2.1.0
