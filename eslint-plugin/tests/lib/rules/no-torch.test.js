@@ -42,14 +42,27 @@ const expectedError = {
 
 const tests = {
   valid: [
-    `
-    import axios from 'axios';
-    `,
+    `import axios from 'axios';`,
+    `track.applyConstraints({ advanced: [{ facingMode: 'environment' }] });`,
+    `track.applyConstraints({ advanced: [] });`,
+    `track.applyConstraints({ width: 1280, height: 720 });`,
   ],
 
   invalid: [
     {
       code: "import Torch from 'react-native-torch';",
+      errors: [expectedError],
+    },
+    {
+      code: "track.applyConstraints({ advanced: [{ torch: true }] });",
+      errors: [expectedError],
+    },
+    {
+      code: "track.applyConstraints({ advanced: [{ torch: false }] });",
+      errors: [expectedError],
+    },
+    {
+      code: "track.applyConstraints({ advanced: [{ facingMode: 'environment' }, { torch: true }] });",
       errors: [expectedError],
     },
   ],
