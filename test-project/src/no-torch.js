@@ -8,9 +8,7 @@ export async function example() {
   const mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
   const [track] = mediaStream.getVideoTracks();
 
-  // Non-compliant: programmatically enables torch via advanced constraints
-  await track.applyConstraints({ advanced: [{ torch: true }] });
+  await track.applyConstraints({ advanced: [{ torch: true }] }); // Non-compliant: programmatically enables torch via advanced constraints
 
-  // Compliant: no torch constraint
-  await track.applyConstraints({ advanced: [{ facingMode: "environment" }] });
+  await track.applyConstraints({ advanced: [{ facingMode: "environment" }] }); // Compliant: no torch constraint
 }
